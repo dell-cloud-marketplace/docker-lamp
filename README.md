@@ -24,12 +24,12 @@ This blueprint installs a basic [LAMP](http://en.wikipedia.org/wiki/LAMP_(softwa
 ## Components
 The stack comprises the following components:
 
-Name       | Version    | Description
------------|------------|------------------------------
-Ubuntu     | Trusty     | Operating system
-MySQL      | 5.5        | Database
-Apache     | 2.4.7      | Web server
-PHP        | 4.0.2      | Scripting language
+Name       | Version                   | Description
+-----------|---------------------------|------------------------------
+Ubuntu     | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/docker-lamp-base)                    | Operating system
+MySQL      | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/docker-lamp-base)      | Database
+Apache     | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/docker-lamp-base)      | Web server
+PHP        | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/docker-lamp-base)      | Scripting language
 
 **If a component is an up-to-date, compatible version, as determined by the operating system package manager, at installation time, please complete the version information based on the install.**
 
