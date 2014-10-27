@@ -38,7 +38,7 @@ Do:
 
 You can now test your new admin password:
 
-    mysql -uadmin -pmypass -h127.0.0.1 -P3306
+    mysql -u admin -pmypass -h127.0.0.1 -P3306
 
 ### Advanced Example 2
 To start your image with:
@@ -60,7 +60,7 @@ The first time that you run your container, a new user admin with all privileges
     ====================================================================
     You can now connect to this MySQL Server using:
 
-      mysql -uadmin -p47nnf4FweaKu -h<host> -P<port>
+      mysql -u admin -p47nnf4FweaKu -h<host> -P<port>
 
     Please remember to change the above password as soon as possible!
     MySQL user 'root' has no password but only allows local connections
@@ -71,7 +71,7 @@ In this case, **47nnf4FweaKu** is the password allocated to the admin user.
 You can then connect to MySQL:
 
 
-    mysql -uadmin -p47nnf4FweaKu mysql -h127.0.0.1 -P3306
+    mysql -u admin -p47nnf4FweaKu mysql -h127.0.0.1 -P3306
 
 
 Note that the root user does not allow connections from outside the container. Please use this admin user instead.
