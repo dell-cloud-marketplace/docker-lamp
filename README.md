@@ -71,7 +71,7 @@ In this case, **47nnf4FweaKu** is the password allocated to the admin user.
 You can then connect to MySQL:
 
 
-    mysql -u admin -p47nnf4FweaKu mysql -h127.0.0.1 -P3306
+    mysql -u admin -p47nnf4FweaKu -h127.0.0.1 -P3306
 
 
 Note that the root user does not allow connections from outside the container. Please use this admin user instead.
