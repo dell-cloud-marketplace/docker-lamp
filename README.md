@@ -55,7 +55,11 @@ Do:
 ## Administration
 
 ### Connecting to MySQL
-The first time that you run your container, a new user admin with all privileges will be created in MySQL with a random password. To get the password, check the logs of the container. You will see an output like the following:
+The first time that you run your container, a new user admin with all privileges will be created in MySQL with a random password. To get the password, check the logs of the container. 
+
+    docker logs <container_id>
+   
+You will see an output like the following:
 
     ====================================================================
     You can now connect to this MySQL Server using:
