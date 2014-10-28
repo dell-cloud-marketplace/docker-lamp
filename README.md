@@ -35,8 +35,15 @@ Do:
 
     docker run -d -p 80:80 -p 3306:3306 -p 443:443 -v /app:/var/www/html \
     -e MYSQL_PASS=mypass dell/lamp
+    
+You can access Apache from your browser:
 
-You can now test your new admin password:
+    http://localhost
+OR
+
+    https://localhost (You must accept the SSL certificate first)
+
+You can test your new MySQL admin password:
 
     mysql -u admin -pmypass -h127.0.0.1 -P3306
 
