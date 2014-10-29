@@ -5,7 +5,7 @@ MAINTAINER Dell Cloud Market Place <Cloud_Marketplace@dell.com>
 ADD run.sh /run.sh
 RUN chmod 755 run.sh
 
-# Remove pre-installed application 
+# Remove any pre-installed applications
 RUN rm -fr /var/www/html/*
 
 # Add the folder with the sample application
