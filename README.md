@@ -62,7 +62,7 @@ Do:
 ## Administration
 
 ### Connecting to MySQL
-The first time that you run your container, a new user admin with all privileges will be created in MySQL with a random password. To get the password, check the logs of the container. 
+The first time that you run your container, a new user **admin** with all privileges will be created in MySQL with a random password. To get the password, check the logs of the container. 
 
     docker logs <container_id>
    
@@ -77,7 +77,7 @@ You will see an output like the following:
     MySQL user 'root' has no password but only allows local connections
     =====================================================================
 
-In this case, **47nnf4FweaKu** is the password allocated to the admin user.
+In this case, **47nnf4FweaKu** is the password allocated to the **admin** user.
 
 You can then connect to MySQL:
 
@@ -85,7 +85,7 @@ You can then connect to MySQL:
     mysql -u admin -p47nnf4FweaKu -h127.0.0.1 -P3306
 
 
-Note that the root user does not allow connections from outside the container. Please use this admin user instead.
+Note that the **root** user can't be used for connections from outside the container. Please use the **admin** user instead.
 
 ### Updating the Application
 The PHP application files are available at path **/var/www/html** on the host. If you are not using a host volume, you will need to use [nsenter](http://jpetazzo.github.io/2014/03/23/lxc-attach-nsinit-nsenter-docker-0-9/) to attach to the container.
