@@ -91,7 +91,7 @@ Note that the **root** user can't be used for connections from outside the conta
 The PHP application files are available at path **/var/www/html** on the host. If you are not using a host volume, you will need to use [nsenter](http://jpetazzo.github.io/2014/03/23/lxc-attach-nsinit-nsenter-docker-0-9/) to attach to the container.
 
 ### Connecting to MySQL from the Application
-The bundled MySQL server has a `root` user with no password for local connections. Simply connect from your
+The bundled MySQL server has a **root** user with no password for local connections. Simply connect from your
 PHP code with this user:
 
 
