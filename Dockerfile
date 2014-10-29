@@ -12,7 +12,7 @@ RUN rm -fr /var/www/html/*
 ADD hello-world-lamp /hello-world-lamp
 
 # Add volumes for MySQL and the application.
-VOLUME ['/var/lib/mysql', '/var/www/html']
+VOLUME ["/var/lib/mysql", "/var/www/html"]
 
 EXPOSE 80 3306 443
 
