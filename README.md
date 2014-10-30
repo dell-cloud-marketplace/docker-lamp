@@ -17,7 +17,7 @@ PHP        | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/do
 ### Basic Example
 Start your image binding host port 8080 to port 80 (Apache Web Server) in your container:
 
-    docker run -d -p 8080:80 dell/lamp
+    sudo docker run -d -p 8080:80 dell/lamp
 
 Test your deployment:
 
@@ -33,7 +33,7 @@ To start your image with:
 
 Do:
 
-    docker run -d -p 80:80 -p 3306:3306 -p 443:443 -v /app:/var/www/html \
+    sudo docker run -d -p 80:80 -p 3306:3306 -p 443:443 -v /app:/var/www/html \
     -e MYSQL_PASS=mypass dell/lamp
     
 You can access Apache from your browser:
@@ -56,7 +56,7 @@ To start your image with:
 
 Do:
 
-    docker run -d -p 80:80 -p 3306:3306 -p 443:443 -v /app:/var/www/html \
+    sudo docker run -d -p 80:80 -p 3306:3306 -p 443:443 -v /app:/var/www/html \
     -v /data/mysql:/var/lib/mysql --name lamp dell/lamp
 
 ## Administration
@@ -64,7 +64,7 @@ Do:
 ### Connecting to MySQL
 The first time that you run your container, a new user **admin** with all privileges will be created in MySQL with a random password. To get the password, check the logs of the container. 
 
-    docker logs <container_id>
+    sudo docker logs <container_id>
    
 You will see an output like the following:
 
