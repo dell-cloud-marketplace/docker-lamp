@@ -103,6 +103,12 @@ PHP code with this user:
 
 ## Reference
 
+### Environmental Variables
+
+Variable   | Default  | Description
+-----------|----------|----------------------------------
+MYSQL_PASS | *random* | Password for MySQL user **admin**
+
 ### Image Details
 
 Based on  [tutum/lamp](https://github.com/tutumcloud/tutum-docker-lamp)
